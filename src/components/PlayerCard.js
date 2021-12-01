@@ -1,6 +1,7 @@
 export default function PlayerCard(props){
 
   const handleClick = () => {
+    //callback props
     props.incrementScore(props.id)
   }
 

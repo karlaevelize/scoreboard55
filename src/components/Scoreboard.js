@@ -16,6 +16,7 @@ export default function Scoreboard(){
       //if it's the id we want to update, we do score + 1
       if (player.id === id){
         return {
+          //... copying the player data
           ...player, // = name: player.name, id: player.id
           score: player.score + 1
         }
@@ -24,6 +25,7 @@ export default function Scoreboard(){
         return player
       }
     })
+    //updating 
     setPlayers(updatedPlayers)
   }
 
@@ -34,6 +36,7 @@ export default function Scoreboard(){
         name={player.name} 
         score={player.score}
         id={player.id}
+        //callback props
         incrementScore={incrementScore}/>)}
     </div>
   )

@@ -10,6 +10,7 @@ export default function AddPlayerForm(props){
     //it prevents the form from refreshing the page
     event.preventDefault()
     props.addPlayer(name)
+    //cleans up the input field after submission
     setName("")
   }
 
